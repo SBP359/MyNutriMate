@@ -109,6 +109,26 @@ USING (
   )
 );
 ```
+# 🚀 Try It Out
+
+You can explore **MyNutriMate** live here:  
+👉 [mynutrimate.netlify.app](https://mynutrimate.netlify.app)
+
+## Demo Accounts
+
+### Patient Login
+- **Email:** patient@gmail.com  
+- **Password:** password  
+
+### Doctor Login
+- **Email:** doctor@gmail.com  
+- **Password:** password  
+
+## 📂 Additional Resources
+- 📑 [Business Plan](https://drive.google.com/file/d/1RosY6ULgjH5xxPWIhuyNeKTZ3CM4OaNL/view)  
+- 💻 [Project Report](https://drive.google.com/file/d/1grxHllECE_tY0Hpuj-DN9SKsoYguZ7KX/view)
+
+
 ## Gallery
 ![Gallery 1](https://raw.githubusercontent.com/SBP359/SBP359/main/nutrimate/gallery.jpg)
 ![Gallery 2](https://raw.githubusercontent.com/SBP359/SBP359/main/nutrimate/gallery%20(1).jpg)
