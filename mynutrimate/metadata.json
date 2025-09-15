@@ -1,0 +1,8 @@
+{
+  "name": "MyNutriMate",
+  "description": "",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}

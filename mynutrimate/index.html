@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 
+      To add your custom favicon, replace 'favicon.ico' with the path to your icon file.
+      Common types are 'image/x-icon' for .ico, 'image/png' for .png, or 'image/svg+xml' for .svg.
+    -->
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>MyNutriMate: AI Health Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand': {
+                'primary': '#f97316',     // Orange-500
+                'secondary': '#fb923c',   // Orange-400
+                'accent': '#fed7aa',      // Orange-200
+                'gradient': '#ff9b50',   // Richer orange for gradients
+              },
+              // Light Theme Palette
+              'ui-bg': '#f8fafc',          // slate-50
+              'ui-card': '#ffffff',         // white
+              'ui-border': '#e2e8f0',      // slate-200
+              'ui-text': '#1e293b',        // slate-800
+              'ui-text-secondary': '#64748b',// slate-500
+              'status-bad-bg': '#fee2e2',       // red-100
+              'status-bad-text': '#b91c1c',     // red-700
+              'status-medium-bg': '#fef9c3',  // yellow-100
+              'status-medium-text': '#a16207', // yellow-700
+              'status-ok-bg': '#dcfce7',         // green-100
+              'status-ok-text': '#15803d',     // green-700
+              'recommendation-bg': '#f0fdf4',  // green-50
+              'assessment-bg': '#fef2f2',     // red-50
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+              'slide-up': 'slideUp 0.5s ease-in-out',
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'focus-pulse': 'focusPulse 1s ease-out',
+              'scale-in': 'scaleIn 0.3s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              focusPulse: {
+                '0%': { transform: 'scale(0.75)', opacity: '1' },
+                '100%': { transform: 'scale(1.5)', opacity: '0' },
+              },
+              scaleIn: {
+                '0%': { transform: 'scale(0.95)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.9.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.45.0",
+    "path": "https://esm.sh/path@^0.12.7",
+    "xlsx": "https://esm.sh/xlsx@^0.18.5",
+    "@capacitor/cli": "https://esm.sh/@capacitor/cli@^7.4.2",
+    "vite": "https://esm.sh/vite@^7.0.6",
+    "@supabase/storage-js": "https://esm.sh/@supabase/storage-js@^2.10.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-ui-bg dark:bg-slate-900 text-ui-text dark:text-slate-50 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

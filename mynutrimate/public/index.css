@@ -1,0 +1,104 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* For glassmorphism effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  @apply rounded-xl border border-white/50 shadow-md;
+}
+
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.6); /* slate-800 with more opacity */
+  @apply border-white/10;
+}
+
+/* Base animation for progress bars */
+@keyframes progress-bar-animation {
+  from {
+    stroke-dashoffset: 339.292; /* Circumference for radius 54 */
+  }
+}
+
+.progress-ring__circle--progress {
+    animation: progress-bar-animation 1s ease-out forwards;
+}
+
+.print-only-header {
+    display: none;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        background-color: #ffffff !important;
+    }
+    
+    header, footer, .no-print {
+        display: none !important;
+    }
+
+    main {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .printable-report {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .print-only-header {
+        display: block !important;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 1rem;
+    }
+
+    .printable-report, .printable-report * {
+        color: black !important;
+    }
+
+    .printable-report .bg-status-bad-bg {
+        background-color: #fee2e2 !important;
+    }
+
+    .printable-report .text-status-bad-text {
+        color: #b91c1c !important;
+    }
+
+    .printable-report .border-red-300 {
+        border: 1px solid #b91c1c !important;
+    }
+    
+    @page {
+        size: A4;
+        margin: 1.5cm;
+    }
+}
+
+/* Add global transitions for a smoother feel */
+button, a, input, textarea, select, div, span {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+button:not(:disabled), a:not(:disabled), label[for] {
+  cursor: pointer;
+}
+
+/* Add a subtle focus ring for accessibility */
+*:focus-visible {
+  @apply outline-none ring-2 ring-offset-2 ring-brand-primary ring-offset-ui-bg dark:ring-offset-slate-900;
+}
