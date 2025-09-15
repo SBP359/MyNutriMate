@@ -109,4 +109,14 @@ USING (
   )
 );
 ```
+## Gallery
+![Gallery 1](https://raw.githubusercontent.com/SBP359/SBP359/main/nutrimate/gallery.jpg)
+![Gallery 2](https://raw.githubusercontent.com/SBP359/SBP359/main/nutrimate/gallery%20(1).jpg)
+![Gallery 3](https://raw.githubusercontent.com/SBP359/SBP359/main/nutrimate/gallery%20(2).jpg)
+![Gallery 4](https://raw.githubusercontent.com/SBP359/SBP359/main/nutrimate/gallery%20(3).jpg)
+![Gallery 5](https://raw.githubusercontent.com/SBP359/SBP359/main/nutrimate/gallery%20(4).jpg)
+![Gallery 6](https://raw.githubusercontent.com/SBP359/SBP359/main/nutrimate/gallery%20(5).jpg)
+
+
 ![Logo](https://github.com/SBP359/SBP359/blob/b26bb10b6fc4ab6ab842affc5dfec1cc7e17bf78/nutrimate/bannerdark.png)
+for screenshots go to !(https://github.com/SBP359/SBP359/tree/main/nutrimate)
