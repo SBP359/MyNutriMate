@@ -11,7 +11,7 @@ This contains everything you need to run your app locally.
 
 2.  **Configure Environment Variables**:
     *   **Gemini API Key**: The application is configured to use the `API_KEY` environment variable for the Gemini API. Ensure this is set in your deployment environment.
-    *   **Supabase Credentials**: The Supabase URL and anonymous key are located in `services/supabaseClient.ts`. The anonymous key is safe to be public. You can replace these with your own project's credentials if needed.
+    *   **Supabase Credentials**: The Supabase URL and anonymous key are also located in env. The anonymous key is safe to be public. You can replace these with your own project's credentials if needed.
 
 3.  **Set up Supabase Database & Storage**:
     *   Log in to your Supabase project dashboard.
